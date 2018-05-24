@@ -15,9 +15,11 @@
 	java -jar --spring.profiles.active=center2
 
 
-输入地址： http://127.0.0.1:9527/
-![]([img/center1.png])
+## 地址： http://127.0.0.1:9527/
+
+![](img/center1.png)
 
 
-输入地址： http://127.0.0.1:9528/
-![]([img/center2.png])
+## 地址： http://127.0.0.1:9528/
+
+![](img/center2.png)
