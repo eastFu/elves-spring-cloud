@@ -15,3 +15,8 @@
 	java -jar --spring.profiles.active=center2
 
 
+输入地址： http://127.0.0.1:9527/
+
+
+
+输入地址： http://127.0.0.1:9528/
