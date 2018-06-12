@@ -33,3 +33,6 @@
 # 3. elves-cron
 
 # 4. elves-queue
+
+# 5. elves-supervisor
+
