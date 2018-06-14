@@ -37,3 +37,5 @@
 # 5. elves-supervisor
 
 # 6. elves-heartbeat
+
+# 7. elves-dashboard
