@@ -1,9 +1,0 @@
-server:
-  port: 9600
-spring:
-  application:
-    name: elves-cron
-eureka:
-  client:
-    service-url:
-      defaultZone: http://center1:9527/eureka/,http://center2:9528/eureka/
