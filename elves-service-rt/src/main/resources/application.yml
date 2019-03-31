@@ -1,0 +1,11 @@
+server:
+  port: 9600
+spring:
+  application:
+    name: elves-service-rt
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://10.12.53.58:9528/eureka/,http://10.12.53.58:9528/eureka/

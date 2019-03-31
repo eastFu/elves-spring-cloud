@@ -15,4 +15,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://center1:9527/eureka/
+      defaultZone: http://127.0.0.1:9527/eureka/

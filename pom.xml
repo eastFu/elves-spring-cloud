@@ -8,6 +8,7 @@
         <module>elves-service-rt</module>
         <module>elves-service-cron</module>
         <module>elves-service-queue</module>
+        <module>elves-gateway</module>
     </modules>
 
     <groupId>pers.east.elves</groupId>
