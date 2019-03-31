@@ -13,10 +13,9 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 10
-    lease-expiration-duration-in-seconds: 5
   client:
     service-url:
       defaultZone: http://10.12.53.58:9528/eureka/,http://10.12.53.58:9528/eureka/
     healthcheck:
       enabled: true
+    registry-fetch-interval-seconds: 5

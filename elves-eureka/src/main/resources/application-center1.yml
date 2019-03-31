@@ -14,7 +14,8 @@ eureka:
     eviction-interval-timer-in-ms: 2000
   instance:
     hostname: center1
-    lease-renewal-interval-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -22,3 +23,4 @@ eureka:
       defaultZone: http://127.0.0.1:9528/eureka/
     healthcheck:
       enabled: true
+    registry-fetch-interval-seconds: 5
