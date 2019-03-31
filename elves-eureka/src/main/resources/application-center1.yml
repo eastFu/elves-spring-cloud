@@ -9,10 +9,16 @@ spring:
 #eureka.instance.prefer-ip-address 默认值为false,如果我们不想使用主机名来定义注册中心的地址，也可以用ip的形式，需要修改这个参数为true。
 #eureka.server.serverenable-self-preservation: false 关闭保护机制
 eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 2000
   instance:
     hostname: center1
+    lease-renewal-interval-in-seconds: 10
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:9528/eureka/
+    healthcheck:
+      enabled: true
