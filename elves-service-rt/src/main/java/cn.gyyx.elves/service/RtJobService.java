@@ -58,8 +58,8 @@ public class RtJobService {
 //        Instruct ins=new Instruct(SecurityUtil.getUniqueKey(), ip, "rt", mode, app, func, param, outTime, proxy);
         Map<String,String> s =new HashMap<>();
         s.put("cmd","ZGF0ZQ==");
-//        Instruct ins=new Instruct(SecurityUtil.getUniqueKey(), ip, "rt", "np", "test", "say", JSON.toJSONString(s), 5000, "python|app-worker.py");
-        Instruct ins=new Instruct(SecurityUtil.getUniqueKey(), ip, "rt", "np", "bumblebee", "excute", JSON.toJSONString(s), 5000, "python|app-worker.py");
+        Instruct ins=new Instruct(SecurityUtil.getUniqueKey(), ip, "rt", "np", "test", "say", JSON.toJSONString(s), 5000, "python|app-worker.py");
+//        Instruct ins=new Instruct(SecurityUtil.getUniqueKey(), ip, "rt", "np", "bumblebee", "excute", JSON.toJSONString(s), 5000, "python|app-worker.py");
         String result= SendThriftJobUtil.sendDataSync(ip,outTime*1000+ PropertyLoader.THRIFT_OUT_TIME, ins);
 
         return result;

@@ -53,9 +53,9 @@ public class SendThriftJobUtil {
             TProtocol protocol = new TBinaryProtocol(transport);
             AgentService.Client client = new AgentService.Client(protocol);
             long start= System.currentTimeMillis();
-            System.out.println(DateUtils.date2String(new Date(start),"yyyy-MM-dd HH:mm:ss sss"));
+            System.out.println(DateUtils.date2String(new Date(start),"yyyy-MM-dd HH:mm:ss SSS"));
             transport.open();
-            System.out.println("open:"+DateUtils.date2String(new Date(start),"yyyy-MM-dd HH:mm:ss sss"));
+            System.out.println("open:"+DateUtils.date2String(new Date(start),"yyyy-MM-dd HH:mm:ss SSS"));
             back=client.instructionInvokeSync(ins);
             long end= System.currentTimeMillis();
             System.out.println("cost:"+(end-start));
