@@ -1,0 +1,14 @@
+server:
+  port: 9600
+spring:
+  application:
+    name: elves-config
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9528/eureka/,http://127.0.0.2:9528/eureka/
+    healthcheck:
+      enabled: true
+    registry-fetch-interval-seconds: 5
