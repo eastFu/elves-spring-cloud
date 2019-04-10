@@ -1,14 +1,21 @@
 server:
-  port: 9600
+  port: 9601
 spring:
   application:
     name: elves-service-rt
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: elves-config
 eureka:
   instance:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://127.0.0.1:9528/eureka/,http://127.0.0.2:9528/eureka/
+      defaultZone: http://10.12.53.58:9528/eureka/,http://10.12.53.58:9528/eureka/
     healthcheck:
       enabled: true
     registry-fetch-interval-seconds: 5
